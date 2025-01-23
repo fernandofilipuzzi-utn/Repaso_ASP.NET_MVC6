@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResptApi.ASP.NET.MVC6", "ResptApi.ASP.NET.MVC6\ResptApi.ASP.NET.MVC6.csproj", "{38CE2E2E-ECCA-4BE2-8A23-C6DAE454827D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormClientAPI", "WinFormClientAPI\WinFormClientAPI.csproj", "{3FD35376-0834-4574-8017-A06AFB960FEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html_cliente_simple", "html_cliente_simple", "{361C66C8-4393-48BE-9EDC-E1184B2845D5}"
+	ProjectSection(SolutionItems) = preProject
+		html_cliente_simple\Index.html = html_cliente_simple\Index.html
+		html_cliente_simple\readme.md = html_cliente_simple\readme.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResptApiWeb", "ResptApi.ASP.NET\ResptApiWeb.csproj", "{58BA6922-6D81-488F-9A9D-35C73A185903}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clientes", "clientes", "{93C512E4-6614-4741-A1A8-1AF3C39AB881}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "servicios", "servicios", "{07970407-DA62-4C92-93F9-5CDDF5264FC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "powershell", "powershell", "{3F3E0E83-FEE6-4688-99DF-440386775C59}"
+	ProjectSection(SolutionItems) = preProject
+		powershell\script.ps1 = powershell\script.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38CE2E2E-ECCA-4BE2-8A23-C6DAE454827D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CE2E2E-ECCA-4BE2-8A23-C6DAE454827D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CE2E2E-ECCA-4BE2-8A23-C6DAE454827D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CE2E2E-ECCA-4BE2-8A23-C6DAE454827D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD35376-0834-4574-8017-A06AFB960FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD35376-0834-4574-8017-A06AFB960FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD35376-0834-4574-8017-A06AFB960FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD35376-0834-4574-8017-A06AFB960FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BA6922-6D81-488F-9A9D-35C73A185903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BA6922-6D81-488F-9A9D-35C73A185903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BA6922-6D81-488F-9A9D-35C73A185903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BA6922-6D81-488F-9A9D-35C73A185903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38CE2E2E-ECCA-4BE2-8A23-C6DAE454827D} = {07970407-DA62-4C92-93F9-5CDDF5264FC3}
+		{3FD35376-0834-4574-8017-A06AFB960FEF} = {93C512E4-6614-4741-A1A8-1AF3C39AB881}
+		{361C66C8-4393-48BE-9EDC-E1184B2845D5} = {93C512E4-6614-4741-A1A8-1AF3C39AB881}
+		{58BA6922-6D81-488F-9A9D-35C73A185903} = {07970407-DA62-4C92-93F9-5CDDF5264FC3}
+		{3F3E0E83-FEE6-4688-99DF-440386775C59} = {93C512E4-6614-4741-A1A8-1AF3C39AB881}
+	EndGlobalSection
+EndGlobal
