@@ -5,12 +5,16 @@
 </head>
 <body class="container mt-4">
 	<h1 class="mb-4">Listado de Personas</h1>
+
 	<button id="miBoton" class="btn btn-primary mb-3" onclick="onEnviar()">Solicitar</button>
+
 	<div id="tabla-container"></div>
 	
 	<script type="text/javascript">
 		function onEnviar() {
-			// Realizar la solicitud a la API
+
+
+			//similar httpclient
 			fetch('http://localhost:5237/api/Personas', {
 				method: 'GET',
 				headers: {
@@ -21,17 +25,18 @@
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
-				return response.json(); // Convertir la respuesta a JSON
+				return response.json(); //deserialización
 			})
 			.then(data => {
-				mostrarTabla(data); // Pasar los datos para generar la tabla
+				mostrarTabla(data); //dibujar la tabla
 			})
 			.catch(error => {
 				console.error('Error:', error);
 			});
 		}
 
-		function mostrarTabla(data) {
+		function mostrarTabla(data)
+		{
 			// Seleccionar el contenedor donde se mostrará la tabla
 			const container = document.getElementById('tabla-container');
 			container.innerHTML = ''; // Limpiar el contenedor antes de agregar la tabla

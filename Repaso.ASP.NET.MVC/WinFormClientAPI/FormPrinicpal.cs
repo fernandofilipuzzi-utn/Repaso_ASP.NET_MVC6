@@ -12,8 +12,9 @@ namespace WinFormClientAPI
             InitializeComponent();
         }
 
-        async private void button1_Click(object sender, EventArgs e)
+        async private void btnListarTodos_Click(object sender, EventArgs e)
         {
+            //simil con sqlclient
             //workstation id=Ejemplo01CRUDSimpleDB.mssql.somee.com;packet size=4096;user id=fernando-dev_SQLLogin_1;pwd=bfzixu5w6p;data source=Ejemplo01CRUDSimpleDB.mssql.somee.com;persist security info=False;initial catalog=Ejemplo01CRUDSimpleDB;TrustServerCertificate=True
             //Microsoft.Data.SqlClient
             //SqlConnection 

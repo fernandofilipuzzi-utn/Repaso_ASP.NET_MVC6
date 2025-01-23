@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnListarTodos = new Button();
             dataGridView1 = new DataGridView();
             DNI = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnListarTodos
             // 
-            button1.Location = new Point(401, 170);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnListarTodos.Location = new Point(417, 99);
+            btnListarTodos.Name = "btnListarTodos";
+            btnListarTodos.Size = new Size(75, 75);
+            btnListarTodos.TabIndex = 0;
+            btnListarTodos.Text = "Listar todos";
+            btnListarTodos.UseVisualStyleBackColor = true;
+            btnListarTodos.Click += btnListarTodos_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { DNI, Nombre });
-            dataGridView1.Location = new Point(115, 146);
+            dataGridView1.Location = new Point(24, 24);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 150);
+            dataGridView1.Size = new Size(371, 221);
             dataGridView1.TabIndex = 1;
             // 
             // DNI
@@ -64,22 +64,23 @@
             Nombre.HeaderText = "Nombre";
             Nombre.Name = "Nombre";
             // 
-            // Form1
+            // FormPrinicpal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(514, 272);
             Controls.Add(dataGridView1);
-            Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(btnListarTodos);
+            Name = "FormPrinicpal";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Form Principal";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
+        private Button btnListarTodos;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn DNI;
         private DataGridViewTextBoxColumn Nombre;
